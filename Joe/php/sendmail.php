@@ -18,9 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $body .= "\nMessage: $message";
 
   if (mail($to, $subject, $body)) {
-    header('Location: /joe');
+    header('Location: /hardingpeel/joe');
   } else {
-    header('Location: /joe');
+    header('Location: /hardingpeel/joe');
   }
 }
 ?>
