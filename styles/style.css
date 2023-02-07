@@ -352,7 +352,7 @@ ul {
     }
 
     50% {
-        top: 90%;
+        top: 93%;
     }
 
     100% {
@@ -384,11 +384,13 @@ ul {
 
 h2 {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin-top: 160px;
+    margin-top: 150px;
+    font-weight: lighter;
+    transition: 200ms;
 }
 
 #maincontenttitle {
@@ -554,7 +556,7 @@ section {
     position: absolute;
     left: 45%;
     transform: translate(-50%);
-    bottom: 100px;
+    bottom: 20%;
 }
 .socials:hover {
     cursor: pointer;
@@ -569,6 +571,11 @@ section {
     height: 50px;
 }
 
+@media screen and (max-width: 740px) {
+    h2 {
+        margin-top: 215px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     #hamburger {

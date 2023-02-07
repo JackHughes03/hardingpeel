@@ -34,66 +34,6 @@ function hamburgerclick() {
   }
 }
 
-// function button1function() {
-//     button1.style.borderBottom = "2px solid white";
-//     button1.style.paddingBottom = "1px";
-//     button2.style.borderBottom = "none";
-//     button2.style.paddingBottom = "0px";
-//     button3.style.borderBottom = "none";
-//     button3.style.paddingBottom = "0px";
-//     button4.style.borderBottom = "none";
-//     button4.style.paddingBottom = "0px";
-//     button5.style.paddingBottom = "0px";
-//     button5.style.borderBottom = "none";
-//     menuexpandcontent.style.opacity = "0";
-//     hamburgerclick();
-// }
-
-// function button2function() {
-//     button2.style.borderBottom = "2px solid white";
-//     button2.style.paddingBottom = "5px";
-//     button1.style.borderBottom = "none";
-//     button1.style.paddingBottom = "0px";
-//     button3.style.borderBottom = "none";
-//     button3.style.paddingBottom = "0px";
-//     button4.style.borderBottom = "none";
-//     button4.style.paddingBottom = "0px";
-//     button5.style.paddingBottom = "0px";
-//     button5.style.borderBottom = "none";
-//     menuexpandcontent.style.opacity = "0";
-//     hamburgerclick();
-// }
-
-// function button3function() {
-//     button3.style.borderBottom = "2px solid white";
-//     button3.style.paddingBottom = "5px";
-//     button2.style.borderBottom = "none";
-//     button2.style.paddingBottom = "0px";
-//     button1.style.borderBottom = "none";
-//     button1.style.paddingBottom = "0px";
-//     button4.style.borderBottom = "none";
-//     button4.style.paddingBottom = "0px";
-//     button5.style.paddingBottom = "0px";
-//     button5.style.borderBottom = "none";
-//     menuexpandcontent.style.opacity = "0";
-//     hamburgerclick();
-// }
-
-// function button4function() {
-//     button4.style.borderBottom = "2px solid white";
-//     button4.style.paddingBottom = "5px";
-//     button2.style.borderBottom = "none";
-//     button2.style.paddingBottom = "0px";
-//     button3.style.borderBottom = "none";
-//     button3.style.paddingBottom = "0px";
-//     button1.style.borderBottom = "none";
-//     button1.style.paddingBottom = "0px";
-//     button5.style.paddingBottom = "0px";
-//     button5.style.borderBottom = "none";
-//     menuexpandcontent.style.opacity = "0";
-//     hamburgerclick();
-// }
-
 function button5function() {
   if(formid.style.display == "block") {
   formid.style.display = "none";
@@ -150,30 +90,6 @@ const textElements = document.querySelectorAll(".slide-in-text");
 textElements.forEach((textElement) => {
   observer.observe(textElement);
 });
-
-// // Get the sticky element
-// const stickyElement = document.getElementById("stop1nav");
-// // Add an event listener for the scroll event on the window object
-// window.addEventListener("scroll", function() {
-//     // Get the current scroll position
-//     const scrollPosition = window.scrollY;
-
-//     // Check if the scroll position is greater than a certain value
-//     if (scrollPosition > 1000) {
-//         navtitle.innerHTML = "Offers";
-
-//     } 
-
-//     if (scrollPosition > 2000) {
-//         navtitle.innerHTML = "Philosophy";
-
-//     }
-
-//     if (scrollPosition > 3000) {
-//         navtitle.innerHTML = "Contact";
-
-//     } 
-// });
 
 const stop1 = document.getElementById("stop1");
 window.addEventListener("scroll", function () {
