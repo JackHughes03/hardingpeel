@@ -330,7 +330,6 @@ ul {
 
 #movetobottom {
     position: absolute;
-    bottom: 540px;
     left: 50%;
     transform: translate(-50%);
     width: 40px;
@@ -342,21 +341,22 @@ ul {
     border-radius: 50px;
     color: black;
     text-decoration: none;
+    bottom: 10px;
     animation: jump 4s infinite;
 }
 
 @keyframes jump {
     
     0% {
-        top: 60%;
+        top: 95%;
     }
 
     50% {
-        top: 58%;
+        top: 90%;
     }
 
     100% {
-        top: 60%;
+        top: 95%;
     }
 }
 
@@ -478,9 +478,19 @@ section {
     scroll-snap-align: start;
     position: relative;
     scroll-behavior: smooth;
+
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    
+    background-color: rgb(26, 52, 23);
+    background-image: url("https://uploads-ssl.webflow.com/61f2774ca365d358c3c4c266/61f2774ca365d3211cc4c2b6_61e9ed78930a7b69aeecc4da_noise.png");
+    background-position: 0 0;
 }
 
 .container {
+    position: absolute;
     scroll-behavior: smooth;
     overflow: scroll;
     height: 100%;
@@ -488,6 +498,7 @@ section {
     left: 0;
     right: 0;
     top: 0;
+    bottom: 0;
     position: absolute;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -505,55 +516,18 @@ section {
 
 
 
-#stop0 {
-    /* position: absolute; */
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: 0;
-    height: 1500px;
-    background-color: rgb(26, 52, 23);
-    background-image: url("https://uploads-ssl.webflow.com/61f2774ca365d358c3c4c266/61f2774ca365d3211cc4c2b6_61e9ed78930a7b69aeecc4da_noise.png");
-    background-position: 0 0;
-}
+/* #stop0 {
+} */
 
 #stop1 {
-    /* position: absolute; */
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: -502px;
-    height: 1000px;
     padding-top: 20px;
-    
-    background-color: rgb(26, 52, 23);
-    background-image: url("https://uploads-ssl.webflow.com/61f2774ca365d358c3c4c266/61f2774ca365d3211cc4c2b6_61e9ed78930a7b69aeecc4da_noise.png");
-    background-position: 0 0;
 }
 
-#stop2 {
-    /* position: absolute; */
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: -502px;
-    height: 1000px;
-    background-color: rgb(26, 52, 23);
-    background-image: url("https://uploads-ssl.webflow.com/61f2774ca365d358c3c4c266/61f2774ca365d3211cc4c2b6_61e9ed78930a7b69aeecc4da_noise.png");
-    background-position: 0 0;
+/* #stop2 {
 }
 
 #stop3 {
-    /* position: absolute; */
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: -502px;
-    height: 1000px;
-    background-color: rgb(26, 52, 23);
-    background-image: url("https://uploads-ssl.webflow.com/61f2774ca365d358c3c4c266/61f2774ca365d3211cc4c2b6_61e9ed78930a7b69aeecc4da_noise.png");
-    background-position: 0 0;
-}
+} */
 
 #laptopimage {
     /* clip-path: polygon(0 0, 100% 0, 100% 71%, 0 71%); */
@@ -575,19 +549,24 @@ section {
     object-fit: cover;
 }
 
-#instagramicon, #facebookicon {
+.socials {
     width: 50px;
     position: absolute;
     left: 45%;
-    transform: translate(-45%);
-    bottom: 50%;
+    transform: translate(-50%);
+    bottom: 100px;
 }
-#instagramicon:hover, #facebookicon:hover {
+.socials:hover {
     cursor: pointer;
 }
-#facebookicon {
-    left: 55%;
-    transform: translate(-55%);
+#fbicon {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+}
+#igicon {
+    width: 50px;
+    height: 50px;
 }
 
 
