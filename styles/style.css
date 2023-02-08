@@ -433,10 +433,12 @@ body {
 
 
 section {
+    border: 2px solid black;
     height: 100%;
     scroll-snap-align: start;
     position: relative;
     scroll-behavior: smooth;
+    overflow-y: scroll;
 
     width: 100%;
     right: 0;
