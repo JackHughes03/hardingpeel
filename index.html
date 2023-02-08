@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>Home - HardingPeel</title>
 </head>
 
 <body>
     <div id="popup">
-
+        
         <button id="close-button" onclick="closePopup()">X</button>
-
+        
         <div id="popup-content">
             <h1 id="popupcontenttitle">Thank you for your email!</h1>
             <p>We will get back to you as-soon-as-possible!</p>
         </div>
     </div>
-
+    
     <form id="formid" action="php/sendmail.php" method="post">
         <a id="close-button-form" onclick="closeform()">X</a>
         <label for="name">Business name:</label><br>
@@ -33,89 +33,112 @@
         <label for="terms"> Subscribe to our mailing list </label><br><br>
         <input id="inputid" type="submit" value="Send">
     </form>
-
+    
     <div class="container">
         <section id="stop0">
             
             <nav id="mainnav">
                 <img id="logo" src="images/f.png">
-
-                <h1 id="navtitle">HardingPeel 0.0.8</h1>
-
+                
+                <h1 id="navtitle">HardingPeel 0.0.9</h1>
+                
                 <div onclick="hamburgerclick()" id="hamburger">
                     <div class="lines" id="line1"></div>
                     <div class="lines" id="line3"></div>
                 </div>
-
+                
                 <button onclick="button5function()" id="freecall">Free Call</button>
                 <hr>
             </nav>
-
+            
             <img class="slide-in-text" id="logomain" src="images/f.png">
             <h1 class="slide-in-text" id="maincontenttitle">Create Meaningful Change</h1>
             
             <p class="slide-in-text" id="maincontentdescription">HardingPeel is a <span class="orangetext">Digital Marketing Agency.</span><br>We help scale your business by optimising PPC Advertising Campaigns.</p>
-
+            
             <a class="socials" href="https://www.instagram.com/hardingpeelmarketing" target="_blank">
                 <img id="igicon" src="images/insta.png">
             </a>
-
+            
             <a class="socials" href="https://www.facebook.com/hardingpeelmarketing" target="_blank">
-            <img id="fbicon" src="images/facebook.png">
-        </a>
-
+                <img id="fbicon" src="images/facebook.png">
+            </a>
+            
             <a href="#stop1" id="movetobottom">▼</a>
         </section>
-
+        
         <section id="stop1">
-
-        <h1 class="slide-in-text" id="secondcontenttitle">The HP Approach</h1>
-        <h2 id="stop1mini">How We Operate</h2>
-
-        <ul id="ticklist">
-            <li><span  class="tick">&#10003;</span> We use your brand history and previous ad statistics to determine what ad strategies will work best.</li>
-            <li><span class="tick">&#10003;</span> We optimise ad campaigns based on advanced analysis and testing.</li>
-            <li><span class="tick">&#10003;</span> We offer ad creative and ad copy.</li>
-            <li><span class="tick">&#10003;</span> We always strive to achieve a breathtaking ROI for our clients.</li>
-        </ul>
-        <ul id="xlist">
-            <li><span class="x">&#10007;</span> We do not offer Google Ads, Email marketing or SEO optimisation.</li>
-            <li><span class="x">&#10007;</span> We do not charge an onboarding fee.</li>
-            <li><span class="x">&#10007;</span> We do not offer free trials.</li>
-            <li><span class="x">&#10007;</span> We do not settle for average results.</li>
-        </ul>
+            
+            <h1 class="slide-in-text" id="secondcontenttitle">The HP Approach</h1>
+            <h2 id="stop1mini">How We Operate</h2>
+            
+            <ul id="ticklist">
+                <li><span  class="tick">&#10003;</span> We use your brand history and previous ad statistics to determine what ad strategies will work best.</li>
+                <li><span class="tick">&#10003;</span> We optimise ad campaigns based on advanced analysis and testing.</li>
+                <li><span class="tick">&#10003;</span> We offer ad creative and ad copy.</li>
+                <li><span class="tick">&#10003;</span> We always strive to achieve a breathtaking ROI for our clients.</li>
+            </ul>
+            <ul id="xlist">
+                <li><span class="x">&#10007;</span> We do not offer Google Ads, Email marketing or SEO optimisation.</li>
+                <li><span class="x">&#10007;</span> We do not charge an onboarding fee.</li>
+                <li><span class="x">&#10007;</span> We do not offer free trials.</li>
+                <li><span class="x">&#10007;</span> We do not settle for average results.</li>
+            </ul>
         </section>
-
+        
         <section id="stop2">
             <h1 class="slide-in-text" id="secondcontenttitle">The HP Identify</h1>
-
+            
             <div id="titlesdiv">
-            <h2 class="stop2minititle" id="title1">Our Mission</h2>
-            <p class="titledescs" id="title1desc">Our mission is to <span class="orangetext">help companies</span> to reach their full potential</p>
-
-            <h2 class="stop2minititle" id="title2">Our Vision</h2>
-            <p class="titledescs"id="title2desc">To be the leading <span class="orangetext">marketing</span> agency for Jewellery and Watch companies.</p>
-
-            <img id="biglogo" src="images/f.png">
-
-            <h2 class="stop2minititle" id="title3">Brand Statement</h2>
-            <p class="titledescs" id="title3desc">At <span class="orangetext">HardingPeel</span> we believe that through creating meaningful change, we can better society.</p>
-
-            <h2 class="stop2minititle" id="title4">Our Promise</h2>
-            <p class="titledescs" id="title4desc">We will provide exceptional value to <span class="orangetext">your</span> business, or you don't pay.</p>
+                <h2 class="stop2minititle" id="title1">Our Mission</h2>
+                <p class="titledescs" id="title1desc">Our mission is to <span class="orangetext">help companies</span> to reach their full potential</p>
+                
+                <h2 class="stop2minititle" id="title2">Our Vision</h2>
+                <p class="titledescs"id="title2desc">To be the leading <span class="orangetext">marketing</span> agency for Jewellery and Watch companies.</p>
+                
+                <img id="biglogo" src="images/f.png">
+                
+                <h2 class="stop2minititle" id="title3">Brand Statement</h2>
+                <p class="titledescs" id="title3desc">At <span class="orangetext">HardingPeel</span> we believe that through creating meaningful change, we can better society.</p>
+                
+                <h2 class="stop2minititle" id="title4">Our Promise</h2>
+                <p class="titledescs" id="title4desc">We will provide exceptional value to <span class="orangetext">your</span> business, or you don't pay.</p>
             </div>
         </section>
-
+        
         <section id="stop3">
-        </section>
+            <h1 class="slide-in-text" id="secondcontenttitle">HP Free Useful Resources</h1>
+            
+            <!-- <div id="cards">
+                <div onclick="card1click()" class="cardsclass" id="card1"></div>
+                <div onclick="card2click()" class="cardsclass" id="card2"></div>
+                <div onclick="card3click()" class="cardsclass" id="card3"></div>
+            </div> -->
 
+            <div class="containerimages">
+                <div class="box">
+                  <img src="images/slide1.jpg">
+                </div>
+                <div class="box">
+                  <img src="images/slide2.jpg">
+                </div>
+                <div class="box">
+                  <img src="images/slide3.png">
+                </div>
+                <div class="box">
+                  <img src="images/slide4.png">
+                </div>
+              </div>
+            
+        </section>
+        
         <section id="stop4">
         </section>
-
+        
         <section id="stop5">
         </section>
     </div>
-
+    
     <!-- <footer class="slide-in-text">Website1 © 2022</footer> -->
     <script src="scripts/index.js"></script>
 </body>

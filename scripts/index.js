@@ -18,7 +18,7 @@ formid = document.getElementById("formid");
 function hamburgerclick() {
   line1.style.transition = "all 0.5s ease";
   line3.style.transition = "all 0.5s ease";
-
+  
   if (line1.style.transform == "rotate(45deg)") {
     menuexpandcontent.style.display = "none";
     line1.style.transform = "rotate(0deg)";
@@ -36,9 +36,9 @@ function hamburgerclick() {
 
 function button5function() {
   if(formid.style.display == "block") {
-  formid.style.display = "none";
+    formid.style.display = "none";
   } else {
-  formid.style.display = "block";
+    formid.style.display = "block";
   }
 }
 
@@ -53,7 +53,7 @@ for (var i = 0; i < inputbutton.length; i++) {
       this.style.backgroundColor = "green";
       this.disabled = false;
       popup = document.getElementById("popup");
-
+      
       popup.style.display = "block";
       popup.style.opacity = "1";
     }

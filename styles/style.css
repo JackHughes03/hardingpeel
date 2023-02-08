@@ -44,12 +44,12 @@ hr {
 
 @keyframes ExtendBorder {
     from {
-      width: 1px;
+        width: 1px;
     }
     to {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 #freecall {
     padding: 10px;
@@ -239,7 +239,7 @@ input[type="submit"]:hover {
 
 #popup-content {
     padding: 30px;
-
+    
 }
 
 #popup-content h1 {
@@ -276,7 +276,7 @@ body::-webkit-scrollbar {
     from {
         transform: translateX(15%);
     }
-
+    
     to {
         transform: translateX(-50%);
     }
@@ -324,11 +324,11 @@ ul {
     0% {
         top: 95%;
     }
-
+    
     50% {
         top: 93%;
     }
-
+    
     100% {
         top: 95%;
     }
@@ -427,8 +427,8 @@ ul {
 
 /* html,
 body {
-  height: 100vh;
-  overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
 } */
 
 
@@ -439,7 +439,7 @@ section {
     position: relative;
     scroll-behavior: smooth;
     overflow-y: scroll;
-
+    
     width: 100%;
     right: 0;
     left: 0;
@@ -462,17 +462,6 @@ section {
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
-
-@media (pointer: coarse) {
-    .container {
-      scroll-snap-type: none;
-      overflow: auto;
-    }
-
-    section {
-      scroll-snap-type: none;
-    }
-  }  
 
 .container::-webkit-scrollbar-track, .container::-webkit-scrollbar {
     display: none;
@@ -550,19 +539,56 @@ section {
     bottom: 145px;
 }
 
+
+.containerimages {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    margin-top: 250px;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    /* box-shadow: 0 20px 30px rgba(0, 0, 0, 0.529); */
+    border: 2px solid rgba(255, 255, 255, 0.584);
+    line-height: 0;
+    height: 500px;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: 100%;
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+   
+
 @media screen and (max-width: 740px) {
     #stop2 {
         text-align: center;
     }
-
+    
     #stop1mini {
         margin-top: 215px;
     }
-
+    
     #biglogo {
         display: none;
     }
-
+    
     #title1 {
         left: 50%;
         transform: translate(-50%);
@@ -573,7 +599,7 @@ section {
         transform: translate(-50%);
         top: 250px;
     }
-
+    
     #title2 {
         left: 50%;
         transform: translate(-50%);
@@ -584,7 +610,7 @@ section {
         transform: translate(-50%);
         top: 400px;
     }
-
+    
     #title3 {
         left: 50%;
         transform: translate(-50%);
@@ -597,7 +623,7 @@ section {
         top: 550px;
         bottom: 0px;
     }
-
+    
     #title4 {
         left: 50%;
         transform: translate(-50%);
@@ -617,12 +643,12 @@ section {
     #hamburger {
         display: block;
     }
-
+    
     #titlesdiv {
-position: relative;
+        position: relative;
         margin-top: 30px;
     }
-
+    
     #menuexpandcontent {
         transition: 200ms;
         width: 180px;
@@ -638,11 +664,11 @@ position: relative;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.501);
         right: 20px;
     }
-
+    
     #logomain {
         margin-top: 100px;
     }
-
+    
     #maincontenttitle {
         margin-top: 200px;
     }
