@@ -608,6 +608,37 @@ section {
     #titlesdiv {
         margin-top: 100px;
     }
+
+    section {
+        border: 2px solid black;
+        height: 100%;
+        scroll-snap-align: start;
+        position: relative;
+        scroll-behavior: smooth;
+        overflow-y: none;
+        
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        
+        background-color: rgb(26, 52, 23);
+        background-image: url("https://uploads-ssl.webflow.com/61f2774ca365d358c3c4c266/61f2774ca365d3211cc4c2b6_61e9ed78930a7b69aeecc4da_noise.png");
+        background-position: 0 0;
+    }
+    
+    .container {
+        scroll-behavior: smooth;
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        scroll-snap-points-y: none;
+        scroll-snap-type: none;
+    }
 }
 
 @media screen and (max-width: 740px) {
