@@ -546,7 +546,7 @@ section {
     padding: 4% 2%;
     box-sizing: border-box;
     height: 100vh;
-    margin-top: 250px;
+    margin-top: 200px;
   }
   
   .box {
@@ -574,7 +574,41 @@ section {
     width: 100%;
     height: 100%;
   }
-   
+
+@media screen and (max-width: 600px) {
+    #maincontenttitle {
+        font-size: 27px;
+    }
+    #secondcontenttitle {
+        font-size: 27px;
+    }
+
+    #maincontentdescription {
+        margin-top: 300px;
+    }
+
+    .socials {
+        margin-top: 430px;
+    }
+
+    #stop1mini {
+        font-size: 15px;
+        margin-top: -110px;
+    }
+
+    #ticklist {
+        margin-top: 200px;
+        font-size: 15px;
+    }
+    #xlist {
+        margin-top: 200px;
+        font-size: 15px;
+    }
+
+    #titlesdiv {
+        margin-top: 100px;
+    }
+}
 
 @media screen and (max-width: 740px) {
     #stop2 {
