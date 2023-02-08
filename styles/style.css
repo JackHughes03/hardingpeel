@@ -10,8 +10,11 @@ html {
     background-attachment: fixed; */
 }
 
-hr {
+hr, #freecall, #navtitle, #mainimage, #logo, #hamburger, #menuexpandcontent, #formid, #close-button-form, #close-button, footer, #xlist, #movetobottom, #logomain, #stop1mini, #maincontenttitle, #secondcontenttitle, #maincontentdescription, #firstimage, #stop1nav, #stop1title, .container, .socials, #biglogo, #title1, #title2, #title3, #title4 {
     position: absolute;
+}
+
+hr {
     color: 2px solid rgb(181, 78, 31);
     background-color: rgb(181, 78, 31);
     border-color: rgb(181, 78, 31);
@@ -49,7 +52,6 @@ hr {
   }
 
 #freecall {
-    position: absolute;
     padding: 10px;
     right: 10px;
     background-color: rgb(32, 60, 27);
@@ -62,7 +64,6 @@ hr {
 
 #navtitle {
     font-size: 30px;
-    position: absolute;
     left: 60px;
     top: -40px;
 }
@@ -82,7 +83,6 @@ hr {
 }
 
 #mainimage {
-    position: absolute;
     left: 0;
     width: 100%;
     margin-top: 1410px;
@@ -90,14 +90,12 @@ hr {
 
 #logo {
     width: 50px;
-    position: absolute;
     left: 5px;
     top: 12px;
 }
 
 #hamburger {
     display: none;
-    position: absolute;
     height: 30px;
     width: 30px;
     top: 20px;
@@ -118,18 +116,7 @@ hr {
 #menuexpandcontent {
     transition: 200ms;
     width: 900px;
-    /* border-radius: 5px; */
-    /* background-color: rgb(30, 35, 40); */
-    /* margin-top: 120px; */
-    /* opacity: 0; */
-    position: absolute;
-    /* padding: 5px; */
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding-bottom: 20px; */
-    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.501); */
     right: -480px;
 }
 
@@ -158,7 +145,6 @@ hr {
     background-color: rgb(25, 30, 35);
     color: white;
     bottom: 0;
-    position: absolute;
     text-align: center;
     padding: 50px;
     left: 50%;
@@ -169,22 +155,14 @@ hr {
 
 
 #close-button-form {
-    position: absolute;
-
     top: 0;
     right: 0;
     padding: 15px;
-
     cursor: pointer;
-
     background-color: transparent;
-
     border: 0;
-
     font-size: 20px;
-
     color: rgb(255, 255, 255);
-
 }
 
 label {
@@ -248,7 +226,6 @@ input[type="submit"]:hover {
 
 
 #close-button {
-    position: absolute;
     top: 0;
     right: 0;
     padding: 15px;
@@ -278,7 +255,6 @@ input[type="submit"]:hover {
 }
 
 footer {
-    position: absolute;
     left: 50%;
     transform: translate(-50%);
     bottom: -100px;
@@ -317,7 +293,6 @@ ul {
     font-size: 20px;
 }
 #xlist {
-    position: absolute;
     right: 0;
     top: 10px;
 }
@@ -329,7 +304,6 @@ ul {
 }
 
 #movetobottom {
-    position: absolute;
     left: 50%;
     transform: translate(-50%);
     width: 40px;
@@ -371,21 +345,19 @@ ul {
 }
 
 #logomain {
-    position: absolute;
     width: 100px;
     left: 50%;
     transform: translate(-50%);
     margin-top: 200px;
 }
 
-#orangetext {
+.orangetext {
     color: rgb(181, 78, 31);
 }
 
 #stop1mini {
     color: white;
     font-size: 25px;
-    position: absolute;
     left: 50%;
     transform: translate(-50%);
     margin-top: 150px;
@@ -393,30 +365,19 @@ ul {
     transition: 200ms;
 }
 
-#maincontenttitle {
+#maincontenttitle, #secondcontenttitle {
     color: white;
     margin-top: 300px;
     left: 50%;
-    position: absolute;
     transform: translate(-50%);
     font-size: 45px;
-    position: absolute;
     font-weight: 900;
     transition: 200ms;
     text-align: center;
 }
 
 #secondcontenttitle {
-    color: white;
     margin-top: 80px;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%);
-    font-size: 45px;
-    position: absolute;
-    font-weight: 900;
-    transition: 200ms;
-    text-align: center;
 }
 
 #maincontenttitle:hover {
@@ -429,7 +390,6 @@ ul {
     margin-top: 450px;
     transform: translate(-50%);
     font-size: 18px;
-    position: absolute;
     transition: 200ms;
     width: 70%;
     text-align: center;
@@ -441,7 +401,6 @@ ul {
 
 #firstimage {
     /* clip-path: polygon(0 0, 100% 0, 100% 71%, 0 71%); */
-    position: absolute;
     /* top: 1900px; */
     height: 100%;
     width: 100%;
@@ -450,7 +409,6 @@ ul {
 }
 
 #stop1nav {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -461,7 +419,6 @@ ul {
 
 #stop1title {
     font-size: 30px;
-    position: absolute;
     left: 10px;
     top: -15px;
     color: white;
@@ -492,7 +449,6 @@ section {
 }
 
 .container {
-    position: absolute;
     scroll-behavior: smooth;
     overflow: scroll;
     height: 100%;
@@ -501,99 +457,55 @@ section {
     right: 0;
     top: 0;
     bottom: 0;
-    position: absolute;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
 
-.container::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track, .container::-webkit-scrollbar {
     display: none;
 }
-
-.container::-webkit-scrollbar {
-    display: none;
-}
-
-
-
-
-
-/* #stop0 {
-} */
 
 #stop1, #stop2 {
     padding-top: 20px;
 }
 
-/*
-#stop3 {
-} */
-
-#laptopimage {
-    /* clip-path: polygon(0 0, 100% 0, 100% 71%, 0 71%); */
-    position: absolute;
-    top: -77px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-}
-
-#poolimage {
-    /* clip-path: polygon(0 0, 100% 0, 100% 71%, 0 71%); */
-    position: absolute;
-    top: -100px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-}
-
 .socials {
     width: 50px;
-    position: absolute;
     left: 45%;
     transform: translate(-50%);
-    bottom: 20%;
+    margin-top: 600px;
 }
 .socials:hover {
     cursor: pointer;
 }
 #fbicon {
-    width: 50px;
-    height: 50px;
     margin-left: 60px;
 }
-#igicon {
+#igicon, #fbicon {
     width: 50px;
     height: 50px;
 }
 
 #biglogo {
     width: 200px;
-    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 #title1 {
-    position: absolute;
     left: 50px;
     top: 200px;
 }
 #title2 {
-    position: absolute;
     right: 50px;
     top: 200px;
 }
 #title3 {
-    position: absolute;
     left: 50px;
     bottom: 200px;
 }
 #title4 {
-    position: absolute;
     right: 50px;
     bottom: 200px;
 }
@@ -602,15 +514,100 @@ section {
     color: white;
 }
 
+.titledescs {
+    color: white;
+    position: absolute;
+    width: 300px;
+}
+
+#title1desc {
+    left: 50px;
+    top: 250px;
+}
+#title2desc {
+    right: 50px;
+    top: 250px;
+}
+#title3desc {
+    left: 50px;
+    bottom: 120px;
+}
+#title4desc {
+    right: 50px;
+    bottom: 145px;
+}
+
 @media screen and (max-width: 740px) {
+    #stop2 {
+        text-align: center;
+    }
+
     #stop1mini {
         margin-top: 215px;
+    }
+
+    #biglogo {
+        display: none;
+    }
+
+    #title1 {
+        left: 50%;
+        transform: translate(-50%);
+        top: 200px;
+    }
+    #title1desc {
+        left: 50%;
+        transform: translate(-50%);
+        top: 250px;
+    }
+
+    #title2 {
+        left: 50%;
+        transform: translate(-50%);
+        top: 350px;
+    }
+    #title2desc {
+        left: 50%;
+        transform: translate(-50%);
+        top: 400px;
+    }
+
+    #title3 {
+        left: 50%;
+        transform: translate(-50%);
+        top: 500px;
+        bottom: 0px;
+    }
+    #title3desc {
+        left: 50%;
+        transform: translate(-50%);
+        top: 550px;
+        bottom: 0px;
+    }
+
+    #title4 {
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 0px;
+        top: 680px;
+    }
+    #title4desc {
+        left: 50%;
+        transform: translate(-50%);
+        top: 730px;
+        bottom: 0px;
     }
 }
 
 @media screen and (max-width: 800px) {
+    
     #hamburger {
         display: block;
+    }
+
+    #titlesdiv {
+position: relative;
+        margin-top: 30px;
     }
 
     #menuexpandcontent {
@@ -619,7 +616,6 @@ section {
         border-radius: 5px;
         background-color: rgb(30, 35, 40);
         margin-top: 100px;
-        position: absolute;
         padding: 5px;
         display: none;
         flex-direction: column;
