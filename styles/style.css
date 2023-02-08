@@ -452,7 +452,7 @@ section {
 
 .container {
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    overflow: scroll;
     height: 100%;
     width: 100%;
     left: 0;
@@ -462,6 +462,17 @@ section {
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
+
+@media (pointer: coarse) {
+    .container {
+      scroll-snap-type: none;
+      overflow: auto;
+    }
+
+    section {
+      scroll-snap-type: none;
+    }
+  }  
 
 .container::-webkit-scrollbar-track, .container::-webkit-scrollbar {
     display: none;
