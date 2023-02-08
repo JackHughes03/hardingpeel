@@ -610,12 +610,12 @@ section {
     }
 
     section {
-        border: 2px solid black;
+        border: none;
         height: 100%;
-        scroll-snap-align: start;
+        scroll-snap-align: unset;
         position: relative;
         scroll-behavior: smooth;
-        overflow-y: none;
+        overflow-y: auto;
         
         width: 100%;
         right: 0;
@@ -636,8 +636,8 @@ section {
         right: 0;
         top: 0;
         bottom: 0;
-        scroll-snap-points-y: none;
-        scroll-snap-type: none;
+        scroll-snap-points-y: unset;
+        scroll-snap-type: unset;
     }
 }
 
