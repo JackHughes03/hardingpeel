@@ -126,3 +126,22 @@ window.addEventListener("scroll", function () {
     stop3.style.top = "3070px";
   }
 });
+
+    // Get current date and month
+    let date = new Date();
+    let currentMonth = date.getMonth();
+    let currentYear = date.getFullYear();
+
+    // Get name of the month
+    let monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+    let currentMonthName = monthNames[currentMonth];
+
+    // Display name of the month
+    document.getElementById("month").innerHTML = currentMonthName + " " + currentYear;
+
+    // Display the days of the month
+    let daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    for (let i = 1; i <= daysInMonth; i++) {
+      document.getElementById("day" + i).innerHTML = i;
+    }

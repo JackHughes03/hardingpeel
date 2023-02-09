@@ -433,7 +433,6 @@ body {
 
 
 section {
-    border: 2px solid black;
     height: 100%;
     scroll-snap-align: start;
     position: relative;
@@ -547,9 +546,9 @@ section {
     box-sizing: border-box;
     height: 100vh;
     margin-top: 200px;
-  }
-  
-  .box {
+}
+
+.box {
     flex: 1;
     overflow: hidden;
     transition: .5s;
@@ -560,42 +559,50 @@ section {
     height: 500px;
     /* border: 2px solid white; */
     border-radius: 5px;
-  }
-  
-  .box > img {
+}
+
+.box > img {
     width: 200%;
     height: 100%;
     object-fit: cover; 
     transition: .5s;
-  }
-  
-  .box:hover { flex: 1 1 50%; }
-  .box:hover > img {
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
     width: 100%;
     height: 100%;
-  }
+}
+
+iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @media screen and (max-width: 600px) {
+    
     #maincontenttitle {
         font-size: 27px;
     }
     #secondcontenttitle {
         font-size: 27px;
     }
-
+    
     #maincontentdescription {
         margin-top: 300px;
     }
-
+    
     .socials {
         margin-top: 430px;
     }
-
+    
     #stop1mini {
         font-size: 15px;
         margin-top: -110px;
     }
-
+    
     #ticklist {
         margin-top: 200px;
         font-size: 15px;
@@ -604,11 +611,11 @@ section {
         margin-top: 200px;
         font-size: 15px;
     }
-
+    
     #titlesdiv {
         margin-top: 100px;
     }
-
+    
     section {
         border: none;
         height: 100%;
